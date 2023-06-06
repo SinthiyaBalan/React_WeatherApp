@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+
 import axios from 'axios'
+import GetWeather from './components/GetWeather';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,19 +16,14 @@ function App() {
 
   function submitHandler(e){
     e.preventDefault();
-    console.log("inside fun");
+    
     setCity(e.target.city.value)
   }
 
 
   return (
     <>
-    <form onSubmit={submitHandler}>
-      <input type="text" name='city' />
-      <button type='submit'>Change</button>
-    </form>
-
-      {data && data.main.temp}
+      <GetWeather data = {data} f = {submitHandler}/>
     </>
   )
 }
