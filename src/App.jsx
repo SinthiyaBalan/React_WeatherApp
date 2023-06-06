@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react'
-
-
 import axios from 'axios'
 import GetWeather from './components/GetWeather';
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
   const [data, setData] = useState();
   const [city, setCity] = useState()
 
@@ -16,15 +14,16 @@ function App() {
 
   function submitHandler(e){
     e.preventDefault();
-    
-    setCity(e.target.city.value)
+    setCity(e.target.city.value);
+    e.target.city.value = "";
+
   }
 
 
   return (
-    <>
+    <div className='App'>
       <GetWeather data = {data} f = {submitHandler}/>
-    </>
+    </div>
   )
 }
 
