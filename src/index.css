@@ -19,14 +19,13 @@ body{
 }
 
 .App{
-  background-color: red;
   width: 100%;
   height: 100%;
 }
 .weather-app{
   width: 100%;
   height: 100%;
-  background-color: rgb(5, 141, 195);
+  background-color: rgb(39, 148, 191);
   /* background-color:rgb(84,178,187); */
   display: flex;
   flex-direction: column;
@@ -36,9 +35,7 @@ body{
   padding: 20px;
 }
 
-
 .title{
-  /* background-color: aqua; */
   height: 50px;
   width: 100%;
   text-align: center;
@@ -85,7 +82,7 @@ input[type="text"] {
   position: relative;
 }
 .desc{
-  color: yellow;
+  color: rgb(197, 197, 94);
   position: absolute;
   margin-top: -32px;
   margin-left: 40px;
@@ -94,7 +91,7 @@ input[type="text"] {
 
 .temp{
   font-size: 55px;
-  color: yellow;
+  color: rgb(246, 246, 157);
 }
 
 .temp-desc{
