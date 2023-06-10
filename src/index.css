@@ -23,8 +23,8 @@ body{
   height: 100%;
 }
 .weather-app{
-  width: 100%;
-  height: 100%;
+  width: 410px;
+  height: 420px;
   background-color: rgb(39, 148, 191);
   /* background-color:rgb(84,178,187); */
   display: flex;
@@ -33,6 +33,7 @@ body{
   align-items: center;
   gap: 20px;
   padding: 20px;
+  border-radius: 2px;
 }
 
 .title{
@@ -47,19 +48,22 @@ body{
 
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  gap: 40px
+  justify-content: space-around;
+  gap: 20px;
 
 }
 input[type="text"] {
-  height: 25px;
-  font-size: 20px;
+  height: 32px;
+  font-size: 22px;
+  width: 215px;
+  padding: 5px;
+  border-radius: 2px;
 }
 
 .btn{
   background-color: rgb(246, 246, 167);
-  width: 100px;
-  border-radius: 1px;
+  width: 88px;
+  border-radius: 2px;
 }
 
 .weather-report{

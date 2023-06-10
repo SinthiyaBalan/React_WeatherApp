@@ -11,7 +11,7 @@ function GetWeather({data ,f}) {
         <h2 className='title'>Weather Forcast</h2>
         <form className='from-wrapper' onSubmit={f}>
             <input type="text" name='city' placeholder='City Name'/>
-            <button type='submit' className='btn'>Get Details</button>
+            <button type='submit' className='btn'>Get Weather</button>
         </form>
 
         <div className='weather-report'>
